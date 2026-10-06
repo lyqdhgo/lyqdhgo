@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="lyqdhgo - AI Application, RAG, Agent">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#111c33"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <circle cx="1035" cy="70" r="190" fill="url(#glow2)"/>
+  <circle cx="150" cy="270" r="200" fill="url(#glow1)"/>
+
+  <g stroke="#1e293b" stroke-width="1" opacity="0.7">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+    <path d="M100 0 V320 M300 0 V320 M500 0 V320 M700 0 V320 M900 0 V320 M1100 0 V320"/>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <rect x="90" y="96" width="8" height="90" rx="4" fill="url(#accent)"/>
+
+  <text x="130" y="146" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="700" fill="#f8fafc" letter-spacing="1">lyqdhgo</text>
+  <text x="132" y="188" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="23" fill="#93c5fd" letter-spacing="4">AI APPLICATION · RAG · AGENT</text>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#64748b">
+    <text x="132" y="248">Python · TypeScript · Vue 3 · Next.js · LangChain · Ollama</text>
+  </g>
+
+  <g>
+    <rect x="132" y="266" width="86" height="4" rx="2" fill="#38bdf8"/>
+    <rect x="226" y="266" width="86" height="4" rx="2" fill="#818cf8"/>
+    <rect x="320" y="266" width="86" height="4" rx="2" fill="#a78bfa"/>
+  </g>
+</svg>
