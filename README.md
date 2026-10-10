@@ -22,7 +22,7 @@
 我在系统性地把「大模型应用」从原理一路做到能跑的产品，关注三件事：
 
 - **RAG 全链路** —— 文档解析 → 文本切分 → 向量化 → 检索召回 → 增强生成 → 引用溯源，以及检索质量到底怎么调。
-- **Agent 工程** —— 不依赖框架手写 ReAct 循环、工具调用与多智能体编排，把「黑魔法」拆成能逐行讲清楚的代码。
+- **Agent 工程** —— 不依赖框架手写 ReAct 循环、工具调用与多智能体编排，再把 Agent 能力服务化（REST 接口）；把「黑魔法」拆成能逐行讲清楚的代码。
 - **能真正落地的项目** —— 每个仓库都保证「拿到手就能跑」：没有 API Key 也能演示、核心零第三方依赖可离线运行、关键路径有测试覆盖。
 
 > 我的项目大多以「学习 + 面试可用」为目标：代码量精炼、分层清晰、中文注释完整，并且把设计取舍写进 README，而不只是给一份使用说明。
@@ -32,6 +32,23 @@
 ## 🚀 精选项目
 
 <table>
+<tr>
+<td colspan="2" valign="top">
+
+### ⭐ [CrewAI_FastAPI](https://github.com/lyqdhgo/CrewAI_FastAPI) · 最新
+
+把多 Agent 协作**包成一个正经的 HTTP 服务**：3 套 Crew 模板（内容生产 / 竞品分析 / 代码审查）通过 REST 接口暴露，5 种模型供应商一键切换。
+
+- **clone 下来不用任何 API Key** 就能跑通全流程（内置离线 MockLLM，CI 也靠它保持零成本）
+- 一条代码路径通吃 DeepSeek / OpenAI / 通义千问 / Ollama —— 换供应商只改一个环境变量
+- 自定义工具两种写法对照（`@tool` 装饰器 / `BaseTool` 子类）+ 路径白名单
+- 115 个测试全离线 · ruff 无告警 · GitHub Actions（含镜像构建验证）
+- README 讲透 8 个知识点，含 4 个实测踩到的坑（如 DeepSeek 不支持 `json_schema`、缺 inputs 时 CrewAI 会静默失败）
+
+`Python` · `CrewAI` · `FastAPI` · `多智能体编排`
+
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 
@@ -125,12 +142,12 @@ AI 方向的**论文阅读与笔记归档**，按主题整理 arXiv 论文要点
 | 分类 | 使用 |
 | --- | --- |
 | **语言** | Python · TypeScript · JavaScript |
-| **大模型应用** | LangChain · LCEL · ReAct · Function Calling · RAG · Prompt Engineering |
+| **大模型应用** | LangChain · LCEL · ReAct · Function Calling · RAG · Prompt Engineering · 多智能体编排（CrewAI） |
 | **模型服务** | Ollama（本地）· DeepSeek · OpenAI 兼容接口 · 通义千问 |
 | **向量检索** | Chroma · Embedding · 余弦相似度 · 文本切分与召回调参 |
-| **后端** | Flask · Flask-SQLAlchemy · Next.js Route Handlers · SSE 流式 |
+| **后端** | FastAPI · Flask · Flask-SQLAlchemy · Next.js Route Handlers · SSE 流式 |
 | **前端** | Vue 3 · Vite · Pinia · Element Plus · ECharts · React · Tailwind CSS |
-| **数据与工程** | MySQL · JWT · 单元测试 · 分层架构 · 原子写与并发控制 |
+| **数据与工程** | MySQL · JWT · 单元测试 · 分层架构 · 原子写与并发控制 · Docker · GitHub Actions |
 
 ---
 
