@@ -2,7 +2,7 @@
 
 <img src="./assets/banner.svg" alt="lyqdhgo — AI Application · RAG · Agent" width="100%" />
 
-### AI 应用开发 · RAG 检索增强 · Agent 智能体
+### AI 应用开发 · RAG 检索增强 · Agent 智能体 · Agent评测
 
 把大模型应用从原理做到能跑起来的产品。
 
