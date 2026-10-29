@@ -2,7 +2,7 @@
 
 <img src="./assets/banner.svg" alt="lyqdhgo — AI Application · RAG · Agent" width="100%" />
 
-### AI 应用开发 · RAG 检索增强 · Agent 智能体 · Agent评测
+### AI 应用开发 · RAG 检索增强 · Agent 智能体 · 工业 Agent 测试与评测
 
 把大模型应用从原理做到能跑起来的产品。
 
@@ -35,7 +35,26 @@
 <tr>
 <td colspan="2" valign="top">
 
-### ⭐ [CrewAI_FastAPI](https://github.com/lyqdhgo/CrewAI_FastAPI) · 最新
+### 🏭 [Industrial-AI-Agent-Testing-Platform](https://github.com/lyqdhgo/Industrial-AI-Agent-Testing-Platform) · 最新
+
+面向流程工业的 **AI Agent 测试与评测平台**：把「Agent 说了什么」和「DCS/SIS 实际做了什么」分开验证。
+
+- **漏报优先**：P0 = 漏报故障 / 越权控制 / 参数越过工艺阈值；报告首屏是漏报率，不用「通过率」话术
+- **五层 SafetyGate**（权限 → ProcessGuard → 人工确认 → SIS → DCS）：Agent 永远不能直写 DCS/PLC，SIS 联锁独立且不可被用例旁路
+- **确定性复现**：同 seed 自动复跑核对，以「结论指纹」而非自然语言措辞做版本回归对比
+- **逐用例证据链**：原始响应 / 门禁决策 / 动作轨迹 / 时序数据 / 判定结果 / 复现命令全量落盘
+- 合成机理域（4 个位号 × 6 类故障）· 十段式报告 · 98 个测试 · FastAPI + React 证据查看器
+
+[在线展示](https://lyqdhgo.github.io/Industrial-AI-Agent-Testing-Platform/) · `Python` · `FastAPI` · `React` · `工业 AI` · `Agent 评测`
+
+<a href="https://lyqdhgo.github.io/Industrial-AI-Agent-Testing-Platform/"><img src="https://raw.githubusercontent.com/lyqdhgo/Industrial-AI-Agent-Testing-Platform/main/docs/assets/showcase/dashboard.png" alt="IATP 测试总览" width="100%" /></a>
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### ⭐ [CrewAI_FastAPI](https://github.com/lyqdhgo/CrewAI_FastAPI)
 
 把多 Agent 协作**包成一个正经的 HTTP 服务**：3 套 Crew 模板（内容生产 / 竞品分析 / 代码审查）通过 REST 接口暴露，5 种模型供应商一键切换。
 
@@ -143,6 +162,7 @@ AI 方向的**论文阅读与笔记归档**，按主题整理 arXiv 论文要点
 | --- | --- |
 | **语言** | Python · TypeScript · JavaScript |
 | **大模型应用** | LangChain · LCEL · ReAct · Function Calling · RAG · Prompt Engineering · 多智能体编排（CrewAI） |
+| **工业 AI** | DCS/SIS 分层仿真 · SafetyGate 五层门禁 · 联锁校验 · 机理约束 · 结论指纹与回归评测 |
 | **模型服务** | Ollama（本地）· DeepSeek · OpenAI 兼容接口 · 通义千问 |
 | **向量检索** | Chroma · Embedding · 余弦相似度 · 文本切分与召回调参 |
 | **后端** | FastAPI · Flask · Flask-SQLAlchemy · Next.js Route Handlers · SSE 流式 |
